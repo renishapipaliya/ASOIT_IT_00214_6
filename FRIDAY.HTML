@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <title>Image Animation</title>
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: Demo;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            text-align: center;
+            padding-top: 49px;
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        @keyframes Demo {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                background-color: yellow;
+                left: 200px;
+                top: 0px;
+                transform: rotate(90deg);
+            }
+
+            50% {
+                background-color: blue;
+                left: 200px;
+                top: 200px;
+                transform: rotate(180deg);
+            }
+
+            75% {
+                background-color: green;
+                left: 0px;
+                top: 200px;
+                transform: rotate(270deg);
+            }
+
+            100% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+
+
+
+    <style type="text/css">
+        .fullscreen_bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -1;
+            background-size: cover;
+        }
+
+        .fullscreen_bg_video {
+            position: fixed;
+            width: auto;
+            height: auto;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        h2 {
+            color: #db5252;
+            font-style: italic;
+        }
+
+
+
+
+        .box {
+            background-color: lightgreen;
+            font-size: 75px;
+            color: black;
+            text-align: center;
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media only screen and (max-width:300px) {
+            #box-1 {
+                display: block;
+                background-color: hotpink;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px) {
+            #box-2 {
+                display: block;
+                background-color: rgb(105, 188, 255);
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            #box-3 {
+                display: block;
+                background-color: rgb(255, 105, 140);
+            }
+        }
+
+        @media (min-width:800px) {
+            #box-4 {
+                display: block;
+                background-color: rgb(140, 255, 105);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+
+        <a href="http://127.0.0.1:5500/day53.html"><button>click Here</button></a>
+
+
+    </div>
+    <div class="box" id="box-1">Mai ek phone hoon</div>
+    <div class="box" id="box-2">Mai ek Tablet hoon</div>
+    <div class="box" id="box-3">Mai ek desktop computer hoon</div>
+    <divclass="fullscreen_bg">
+        <video src="video.mp4" autoplay loop muted class="fullscreen_bg_video"></video>
+        </div>
+        <div>RENISHA Is Here....
+
+
+        </div>
+</body>
+
+</html>
